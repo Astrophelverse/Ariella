@@ -1,0 +1,155 @@
+/* Global */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+
+/* Password Page */
+#password-page {
+  background: url('https://i.ibb.co/bjxXtq8f') center/cover no-repeat;
+  filter: blur(8px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-container {
+  position: absolute;
+  background: rgba(255,255,255,0.85);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.password-container h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 48px;
+  color: #6a2cb7;
+  margin-bottom: 10px;
+}
+
+.password-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#password-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #6a2cb7;
+  outline: none;
+}
+
+#password-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #6a2cb7;
+  color: white;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Notebook Page */
+.hidden { display: none; }
+
+#notebook-page {
+  background: url('https://i.ibb.co/N69DdzYq') center/cover no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#notebook-container {
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.page {
+  min-height: 400px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #6a2cb7;
+  border-radius: 10px;
+  background: #e0f2e9; /* soft green */
+  position: relative;
+}
+
+.page h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 24px;
+  color: #6a2cb7;
+  margin-bottom: 10px;
+}
+
+.page textarea {
+  width: 100%;
+  min-height: 200px;
+  border: none;
+  background: transparent;
+  font-family: 'Segoe UI', cursive;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
+.image-placeholder, .qr-placeholder {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #6a2cb7;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  text-align: center;
+  line-height: 100px;
+  color: #6a2cb7;
+  font-size: 12px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#controls button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  background: #6a2cb7;
+  color: white;
+  cursor: pointer;
+}
+
+#print-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background: #6a2cb7;
+  color: white;
+  cursor: pointer;
+}
