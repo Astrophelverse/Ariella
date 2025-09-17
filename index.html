@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariella - Magical Notebook</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <!-- Password Page -->
+  <div id="password-page">
+    <div class="password-container">
+      <h1>Ariella 💜</h1>
+      <p>Enter the secret password 🌿</p>
+      <input type="password" id="password-input" placeholder="Type the password..." />
+      <button id="password-btn">Open Notebook</button>
+      <p id="password-error" class="error-msg">Wrong password!</p>
+    </div>
+  </div>
+
+  <!-- Notebook Container -->
+  <div id="notebook-page" class="hidden">
+    <div id="notebook-container">
+      <div id="page-wrapper"></div>
+      <div id="controls">
+        <button id="prev-page">⟵</button>
+        <span id="page-number">1</span>
+        <button id="next-page">⟶</button>
+      </div>
+      <button id="print-btn">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
