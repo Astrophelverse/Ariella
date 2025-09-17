@@ -6,15 +6,35 @@ body, html {
   height: 100%;
 }
 
-/* Password Page */
-#password-page {
+body {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: url('https://i.ibb.co/bjxXtq8f') center/cover no-repeat;
   filter: blur(8px);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: -1;
 }
+
+#password-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Your existing styles for inputs, buttons, etc. remain the same */
 
 .password-container {
   position: absolute;
